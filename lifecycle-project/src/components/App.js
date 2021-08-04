@@ -34,7 +34,6 @@ class App extends React.Component {
           ...this.state,
           userData: [...this.state.userData, res.data]
         })
-        console.log(this.state)
       })
   }
 
