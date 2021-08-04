@@ -84,7 +84,7 @@ class Card extends React.Component{
                     isOpen={this.state.isModalOpen}
                     onRequestClose={this.closeModal}
                 >
-                    <Followers closeModal={this.closeModal}/>
+                    <Followers closeModal={this.closeModal} user={this.props.user}/>
                 </Modal>
             </div>
         )
