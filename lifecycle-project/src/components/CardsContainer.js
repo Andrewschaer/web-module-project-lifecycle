@@ -4,12 +4,10 @@ import Card from './Card.js'
 class CardsContainer extends React.Component{
     render(){
         return (
-            <div>
-                <h2>Inside the Cards Container</h2>
+            <div className='cards-container'>
                 {this.props.userData.map(user => (
                     <Card key={user.id} user={user}/>
-                ))}
-                
+                ))}   
             </div>
         )
     };

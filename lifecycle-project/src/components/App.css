@@ -1,38 +1,157 @@
-.App {
+h1 {
+  font-size: 3rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: 2.2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+  font-size: 1.8rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h4 {
+  font-size: 1.6rem
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+.cards-container{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-container{
+  background-image: url('../assets/pokemonbackground.jpeg');
+  border: 20px solid gold;
+  border-radius: 3%;
+  max-width: 46%;
+  margin: 2%;
+}
+.cardHeader-container{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 2% 0 0 0;
+}
+
+.cardHeader-container h3{
+  padding: 0 3.5%;
+  font-weight: 800;
+}
+
+.img-container {
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 1% 4%;
 }
 
-.App-link {
-  color: #61dafb;
+.img-container img {
+  max-width: 95%;
+  height: auto;
+  border: 10px inset gold;
+  box-shadow: 5px 5px dimgrey;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.details-container {
+  background-color: gold;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.85rem;
+  max-width: 84%;
+  margin: 2% auto;
+  padding: 1%;
+  text-align: center;
+}
+
+.details-container p{
+  /* padding: 2%; */
+  font-weight: bold;
+}
+
+.bio-container {
+  max-width: 93%;
+  margin:auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  border-bottom: 2px solid black;
+  padding-bottom: 1%;
+}
+
+.bio-container h4{
+  color: darkblue;
+  padding-left: 5%;
+  font-weight: 800;
+}
+
+.bio-container p{
+  padding-right: 5%;
+  padding-left: 2%;
+  font-weight: 800;
+}
+
+.followers-container{
+  max-width: 93%;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid black;
+  padding: 2% 0;
+}
+
+.followers-subContainer{
+  display: flex;
+  align-items: baseline;
+  padding-left: 5%;
+}
+
+.followers-subContainer p{
+  overflow: visible;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.followers-container h4{
+  padding-right: 5%;
+  font-weight: 800;
+}
+
+.following-container{
+  max-width: 93%;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid black;
+  padding: 2% 0;
+}
+.following-container h4{
+  padding: 0 5%;
+  font-weight: 800;
+}
+
+.cardFooter-container{
+  display: flex;
+  justify-content: space-around;
+  padding: 2% 0;
+}
+.cardFooter-subContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 800;
+  color: midnightblue;
+}
+
+.cardFooter-subContainer a{
+  text-decoration: none;
+  color: midnightblue;
 }
