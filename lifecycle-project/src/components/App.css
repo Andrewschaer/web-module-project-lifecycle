@@ -19,6 +19,12 @@ h5 {
   font-size: 1.4rem;
 }
 
+form {
+  display: block;
+  text-align: center;
+  padding: 3% 0;
+}
+
 .cards-container{
   display: flex;
   justify-content: space-around;
@@ -54,7 +60,7 @@ h5 {
   max-width: 95%;
   height: auto;
   border: 10px inset gold;
-  box-shadow: 5px 5px dimgrey;
+  box-shadow: 8px 6px darkslategray;
   
 }
 
